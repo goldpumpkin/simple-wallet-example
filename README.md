@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js React App with MetaMask Integration
 
-## Getting Started
+This project showcases a simple React application built with Next.js framework that integrates with MetaMask wallet. The main functionalities implemented in this project include:
 
-First, run the development server:
+1. **Connect MetaMask Wallet:**
+   Users can connect their MetaMask wallet to the React application, allowing seamless interaction with the Ethereum blockchain.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. **Transfer Funds:**
+   The application enables users to initiate fund transfers to target Ethereum accounts directly from the React interface.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Utilize Sepolia Test Network:**
+   The project utilizes the Sepolia test network, providing a sandboxed environment for testing Ethereum transactions without using real ETH.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. **Get Test ETH from Chainlink Faucet:**
+   Users can obtain test Ether (ETH) for the Sepolia test network through the Chainlink faucet at https://faucets.chain.link/.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+5. **Create two accounts for ETH transfers:**
+   Before testing the transfer functionality, you will need to create two Ethereum accounts to simulate actual transfer operations.
 
-## Learn More
+## Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+- Next.js: Framework for building React applications with server-side rendering and routing capabilities.
+- React: JavaScript library for building user interfaces.
+- MetaMask: Ethereum wallet extension for interacting with Ethereum-based applications in the browser.
+- Sepolia Test Network: Ethereum test network for development and testing purposes.
+- Chainlink Faucet: Service for obtaining test Ether (ETH) for Ethereum test networks.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- `npm install ethers`
+- `npm install @headlessui/react`
 
-## Deploy on Vercel
+## Reference
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [sample-wallet.tsx](https://github.com/luzhenqian/web3-examples/blob/85819185b9c7c18268ae1571fafc3045b8b0b555/frontend/pages/sample-wallet.tsx)
+- [property-ethereum-does-not-exist-on-type-window-typeof-globalthis-error](https://stackoverflow.com/questions/70961190/property-ethereum-does-not-exist-on-type-window-typeof-globalthis-error)
+- [ethers-v6-migrate-missing](https://docs.ethers.org/v6/migrating/#migrate-missing)
